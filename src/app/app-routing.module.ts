@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 
+import { AdminGuard } from './admin.guard';
 
 import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -29,20 +30,20 @@ const routes: Routes = [
     }, 
     {
       path: 'contact',
-      component: ContactComponent,
+      loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
     },
     {
       path:'blog',
-      component: BlogComponent,
+      loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule)
   
     },
-    {
+   /*  {
       path: 'blog/:id',
       component: BlogContentComponent,
-    },
+    }, */
     {
       path:'**',
-      component: PageNotFoundComponent,
+     loadChildren: () => import('./page-not-found/page-not-found.module').then(m => m.PageNotFoundModule)
     }
 
   
