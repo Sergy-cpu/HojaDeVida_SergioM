@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/home.component';
 import { CommonModule } from '@angular/common'
 import { SharedModule } from './../shared/shared.module';
 import { HomeRoutingModule } from './home-routing.module';
+
+import { MaterialModule } from './../material/material.module';
 
 @NgModule({
     declarations: [
@@ -12,7 +14,8 @@ import { HomeRoutingModule } from './home-routing.module';
     imports: [
         HomeRoutingModule,
         SharedModule,
-        CommonModule
+        CommonModule,
+        MaterialModule
     ]
 })
 

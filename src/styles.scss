@@ -1,12 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;900&display=swap');
+
+$main-color: #07213e;
+$main-color-gradient: linear-gradient(to right top, #0b2946, #07213e, #041a36, #02122f, #000527);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { 
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+    font-family: 'Roboto Slab', serif; 
+ }
+
 
 

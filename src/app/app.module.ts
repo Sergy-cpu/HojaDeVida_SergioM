@@ -11,9 +11,11 @@ import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BlogContentComponent } from './blog-content/blog-content.component';
 import { LayoutComponent } from './layout/layout.component';
+import { LayoutModule } from './layout/layout.module';
 
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    LayoutModule,
     SharedModule,
     BrowserAnimationsModule
   ],

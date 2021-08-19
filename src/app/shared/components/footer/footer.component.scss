@@ -1,0 +1,7 @@
+$main-color: #07213e;
+$main-color-gradient: linear-gradient(to right top, #0b2946, #07213e, #041a36, #02122f, #000527);
+
+.footer {
+    background-image: $main-color-gradient;
+    height: 50vh;
+}
